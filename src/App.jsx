@@ -14,10 +14,10 @@ function App() {
       <section className="form__section">
         <div className="form__info">
           <p>
-            <strong>Try it free 7 days</strong>then $20/mo. thereafter
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
           </p>
         </div>
-        <form>
+        <form className="form__container">
           <input
             type="text"
             name="user_name"
@@ -43,11 +43,11 @@ function App() {
             placeholder="Password"
           />
           <button type="submit">Claim your free trial</button>
+          <p className="footer">
+            By clicking the button, you are agreeing to our{" "}
+            <span className="red-text">Terms and Services</span>
+          </p>
         </form>
-        <span className="footer">
-          By clicking the button, you are agreeing to our{" "}
-          <span className="red-text">Terms and Services</span>
-        </span>
       </section>
     </main>
   );
